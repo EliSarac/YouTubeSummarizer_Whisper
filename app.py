@@ -12,7 +12,7 @@ def load_whisper():
     return whisper_model
 
 #runs the function and stores the Transformer model in a local cache
-@st.cache(allow_output_mutation=True) #loads the pipeline model but I have no idea why is this as a function
+@st.cache(allow_output_mutation=True)
 def load_summarizer():
     model = pipeline("summarization")
     return model
